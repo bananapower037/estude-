@@ -27,25 +27,28 @@
     <section class="px-6 py-8">
       <h2 class="text-2xl font-bold text-center mb-6">Matérias essenciais para aprender e praticar</h2>
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-        <div
+        <router-link 
           v-for="materia in materias"
           :key="materia.nome"
-          class="bg-white rounded-xl shadow-md p-4 flex flex-col items-center justify-center hover:scale-105 transition-transform duration-300"
+          :to="`/${materia.nome}`"
+          class="bg-white rounded-xl shadow-md p-4 flex flex-col items-center justify-center hover:scale-105 transition-transform duration-300 cursor-pointer"
         >
           <div class="text-4xl mb-2">{{ materia.emoji }}</div>
           <h3 class="text-lg font-semibold text-center">{{ materia.nome }}</h3>
-        </div>
+        </router-link>
+
       </div>
     </section>
   </div>
 </template>
 
 <script>
+
 export default {
   data() {
     return {
       materias: [
-        { nome: 'Língua Portuguesa', emoji: '📘' },
+        { nome: 'Portugues', emoji: '📘' },
         { nome: 'Matemática', emoji: '➗' },
         { nome: 'História', emoji: '🏛️' },
         { nome: 'Inglês', emoji: '🇬🇧' },
