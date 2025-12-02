@@ -6,13 +6,7 @@
       <p class="text-center text-sm mt-2">Do fundamental ao médio, tudo para aprender bem</p>
     </header>
 
-    <!-- Barra de navegação -->
-    <nav class="bg-white shadow flex justify-center gap-6 py-4 text-purple-700 font-semibold">
-      <router-link to="/" class="hover:text-purple-900">Home</router-link>
-      <router-link to="/login" class="hover:text-purple-900">Login</router-link>
-      <router-link to="/registro" class="hover:text-purple-900">Registro</router-link>
-      <router-link to="/dashboard" class="hover:text-purple-900">Dashboard</router-link>
-    </nav>
+    
 
     <!-- Campo de busca -->
     <div class="flex justify-center mt-6 mb-4">
